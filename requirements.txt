@@ -1,0 +1,8 @@
+onnxruntime
+opencv-python
+firebase-admin
+numpy
+Pillow
+torch
+torchvision
+picamera2
