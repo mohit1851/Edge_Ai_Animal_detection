@@ -1,4 +1,4 @@
-# 🦅 Edge-AI Animal Detection System
+#  Edge-AI Animal Detection System
 **Real-Time Computer Vision on Embedded Hardware using Quantized MobileNetV3**
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
@@ -6,7 +6,7 @@
 ![Model](https://img.shields.io/badge/Model-MobileNetV3-green)
 ![Optimization](https://img.shields.io/badge/Optimization-ONNX%20INT8-orange)
 
-## 📖 Project Overview
+##  Project Overview
 This project implements an autonomous **Edge-to-Cloud monitoring system** designed to detect animals in agricultural environments. 
 
 Traditional computer vision systems often rely on heavy cloud processing, which requires high bandwidth and introduces latency. This solution runs **entirely on the edge** (Raspberry Pi 3 Model B), utilizing deep learning optimizations to classify video frames in real-time. Only critical detection events are synchronized to a **Firebase Realtime Database** for remote monitoring.
@@ -18,7 +18,7 @@ Traditional computer vision systems often rely on heavy cloud processing, which 
 * **Hardware Efficient:** Runs on low-power ARM CPUs (Raspberry Pi) without dedicated accelerators.
 
 ---
-## 📊 Dataset
+##  Dataset
 The model was trained on the **Farm Harmful Animals Dataset**, a collection of images specifically curated for agricultural monitoring.
 
 * **Source:** [Kaggle - Farm Harmful Animals Dataset](https://www.kaggle.com/datasets/muzammilaliveltech/farm-harmful-animals-dataset)
@@ -28,7 +28,7 @@ The model was trained on the **Farm Harmful Animals Dataset**, a collection of i
 ---
 
 
-## 🏗️ System Architecture
+##  System Architecture
 
 The system follows a **Producer-Consumer** pattern:
 
@@ -41,7 +41,7 @@ The system follows a **Producer-Consumer** pattern:
 
 ---
 
-## 🧠 Model & Optimization
+##  Model & Optimization
 To achieve real-time performance on a Raspberry Pi 3 (which has limited CPU power), standard models like ResNet or VGG are too heavy. We utilized **MobileNetV3-Large** and applied post-training dynamic quantization.
 
 ### 1. The Backbone
@@ -60,7 +60,7 @@ Deep learning models typically train using 32-bit floating-point numbers (FP32).
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
 ```text
 ├── core/
